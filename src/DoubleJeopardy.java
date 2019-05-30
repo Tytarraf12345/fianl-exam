@@ -8,14 +8,15 @@
  *
  * @author 805398
  */
-public class Scene1 extends javax.swing.JFrame {
+public class DoubleJeopardy extends javax.swing.JFrame {
      int CurrentQuestion ;
      int Score;
      
     /**
      * Creates new form Scene1
      */
-    public Scene1() {
+    public DoubleJeopardy(int Score) {
+        this.Score = Score;
         initComponents();
     }
 
@@ -73,7 +74,6 @@ public class Scene1 extends javax.swing.JFrame {
         scoremagic = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -83,295 +83,265 @@ public class Scene1 extends javax.swing.JFrame {
         jLabel1.setText("                         Jeopardy");
         jLabel1.setOpaque(true);
 
-        Box2001.setBackground(new java.awt.Color(255, 255, 255));
         Box2001.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box2001.setForeground(new java.awt.Color(0, 255, 0));
-        Box2001.setText("200");
+        Box2001.setText("400");
         Box2001.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box2001ActionPerformed(evt);
             }
         });
 
-        Box6001.setBackground(new java.awt.Color(255, 255, 255));
         Box6001.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box6001.setForeground(new java.awt.Color(0, 255, 0));
-        Box6001.setText("600");
+        Box6001.setText("1200");
         Box6001.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box6001ActionPerformed(evt);
             }
         });
 
-        Box8001.setBackground(new java.awt.Color(255, 255, 255));
         Box8001.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box8001.setForeground(new java.awt.Color(0, 255, 0));
-        Box8001.setText("800");
+        Box8001.setText("1600");
         Box8001.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box8001ActionPerformed(evt);
             }
         });
 
-        Box4001.setBackground(new java.awt.Color(255, 255, 255));
         Box4001.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box4001.setForeground(new java.awt.Color(0, 255, 0));
-        Box4001.setText("400");
+        Box4001.setText("800");
         Box4001.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box4001ActionPerformed(evt);
             }
         });
 
-        Box10001.setBackground(new java.awt.Color(255, 255, 255));
         Box10001.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box10001.setForeground(new java.awt.Color(0, 255, 0));
-        Box10001.setText("1000");
+        Box10001.setText("2000");
         Box10001.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box10001ActionPerformed(evt);
             }
         });
 
-        Box10002.setBackground(new java.awt.Color(255, 255, 255));
         Box10002.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box10002.setForeground(new java.awt.Color(0, 255, 0));
-        Box10002.setText("1000");
+        Box10002.setText("2000");
         Box10002.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box10002ActionPerformed(evt);
             }
         });
 
-        Box2002.setBackground(new java.awt.Color(255, 255, 255));
         Box2002.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box2002.setForeground(new java.awt.Color(0, 255, 0));
-        Box2002.setText("200");
+        Box2002.setText("400");
         Box2002.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box2002ActionPerformed(evt);
             }
         });
 
-        Box6002.setBackground(new java.awt.Color(255, 255, 255));
         Box6002.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box6002.setForeground(new java.awt.Color(0, 255, 0));
-        Box6002.setText("600");
+        Box6002.setText("1200");
         Box6002.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box6002ActionPerformed(evt);
             }
         });
 
-        Box8002.setBackground(new java.awt.Color(255, 255, 255));
         Box8002.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box8002.setForeground(new java.awt.Color(0, 255, 0));
-        Box8002.setText("800");
+        Box8002.setText("1600");
         Box8002.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box8002ActionPerformed(evt);
             }
         });
 
-        Box4002.setBackground(new java.awt.Color(255, 255, 255));
         Box4002.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box4002.setForeground(new java.awt.Color(0, 255, 0));
-        Box4002.setText("400");
+        Box4002.setText("800");
         Box4002.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box4002ActionPerformed(evt);
             }
         });
 
-        Box4003.setBackground(new java.awt.Color(255, 255, 255));
         Box4003.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box4003.setForeground(new java.awt.Color(0, 255, 0));
-        Box4003.setText("400");
+        Box4003.setText("800");
         Box4003.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box4003ActionPerformed(evt);
             }
         });
 
-        Box6003.setBackground(new java.awt.Color(255, 255, 255));
         Box6003.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box6003.setForeground(new java.awt.Color(0, 255, 0));
-        Box6003.setText("600");
+        Box6003.setText("1200");
         Box6003.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box6003ActionPerformed(evt);
             }
         });
 
-        Box8003.setBackground(new java.awt.Color(255, 255, 255));
         Box8003.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box8003.setForeground(new java.awt.Color(0, 255, 0));
-        Box8003.setText("800");
+        Box8003.setText("1600");
         Box8003.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box8003ActionPerformed(evt);
             }
         });
 
-        Box10003.setBackground(new java.awt.Color(255, 255, 255));
         Box10003.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box10003.setForeground(new java.awt.Color(0, 255, 0));
-        Box10003.setText("1000");
+        Box10003.setText("2000");
         Box10003.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box10003ActionPerformed(evt);
             }
         });
 
-        Box2003.setBackground(new java.awt.Color(255, 255, 255));
         Box2003.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box2003.setForeground(new java.awt.Color(0, 255, 0));
-        Box2003.setText("200");
+        Box2003.setText("400");
         Box2003.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box2003ActionPerformed(evt);
             }
         });
 
-        Box10004.setBackground(new java.awt.Color(255, 255, 255));
         Box10004.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box10004.setForeground(new java.awt.Color(0, 255, 0));
-        Box10004.setText("1000");
+        Box10004.setText("2000");
         Box10004.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box10004ActionPerformed(evt);
             }
         });
 
-        Box6004.setBackground(new java.awt.Color(255, 255, 255));
         Box6004.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box6004.setForeground(new java.awt.Color(0, 255, 0));
-        Box6004.setText("600");
+        Box6004.setText("1200");
         Box6004.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box6004ActionPerformed(evt);
             }
         });
 
-        Box2004.setBackground(new java.awt.Color(255, 255, 255));
         Box2004.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box2004.setForeground(new java.awt.Color(0, 255, 0));
-        Box2004.setText("200");
+        Box2004.setText("400");
         Box2004.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box2004ActionPerformed(evt);
             }
         });
 
-        Box4004.setBackground(new java.awt.Color(255, 255, 255));
         Box4004.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box4004.setForeground(new java.awt.Color(0, 255, 0));
-        Box4004.setText("400");
+        Box4004.setText("800");
         Box4004.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box4004ActionPerformed(evt);
             }
         });
 
-        Box8004.setBackground(new java.awt.Color(255, 255, 255));
         Box8004.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box8004.setForeground(new java.awt.Color(0, 255, 0));
-        Box8004.setText("800");
+        Box8004.setText("1600");
         Box8004.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box8004ActionPerformed(evt);
             }
         });
 
-        Box2005.setBackground(new java.awt.Color(255, 255, 255));
         Box2005.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box2005.setForeground(new java.awt.Color(0, 255, 0));
-        Box2005.setText("200");
+        Box2005.setText("400");
         Box2005.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box2005ActionPerformed(evt);
             }
         });
 
-        Box6005.setBackground(new java.awt.Color(255, 255, 255));
         Box6005.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box6005.setForeground(new java.awt.Color(0, 255, 0));
-        Box6005.setText("600");
+        Box6005.setText("1200");
         Box6005.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box6005ActionPerformed(evt);
             }
         });
 
-        Box8005.setBackground(new java.awt.Color(255, 255, 255));
         Box8005.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box8005.setForeground(new java.awt.Color(0, 255, 0));
-        Box8005.setText("800");
+        Box8005.setText("1600");
         Box8005.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box8005ActionPerformed(evt);
             }
         });
 
-        Box4005.setBackground(new java.awt.Color(255, 255, 255));
         Box4005.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box4005.setForeground(new java.awt.Color(0, 255, 0));
-        Box4005.setText("400");
+        Box4005.setText("800");
         Box4005.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box4005ActionPerformed(evt);
             }
         });
 
-        Box10005.setBackground(new java.awt.Color(255, 255, 255));
         Box10005.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
         Box10005.setForeground(new java.awt.Color(0, 255, 0));
-        Box10005.setText("1000");
+        Box10005.setText("2000");
         Box10005.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Box10005ActionPerformed(evt);
             }
         });
 
-        C1.setBackground(new java.awt.Color(255, 255, 255));
         C1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        C1.setText("Famous Woman");
+        C1.setText("Kardashians");
         C1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C1ActionPerformed(evt);
             }
         });
 
-        C2.setBackground(new java.awt.Color(255, 255, 255));
         C2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        C2.setText("Years");
+        C2.setText("Asia");
         C2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C2ActionPerformed(evt);
             }
         });
 
-        C3.setBackground(new java.awt.Color(255, 255, 255));
         C3.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        C3.setText("Movies");
+        C3.setText("Actors");
         C3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C3ActionPerformed(evt);
             }
         });
 
-        C4.setBackground(new java.awt.Color(255, 255, 255));
         C4.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        C4.setText("Breakfast");
+        C4.setText("Double EE's");
         C4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C4ActionPerformed(evt);
             }
         });
 
-        C5.setBackground(new java.awt.Color(255, 255, 255));
         C5.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        C5.setText("Sports");
+        C5.setText("Ohio");
         C5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 C5ActionPerformed(evt);
@@ -419,14 +389,6 @@ public class Scene1 extends javax.swing.JFrame {
 
         jLabel7.setText("Daily Triple = your * 3");
 
-        jButton3.setForeground(new java.awt.Color(0, 51, 255));
-        jButton3.setText("Double Jeopardy");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -470,10 +432,10 @@ public class Scene1 extends javax.swing.JFrame {
                         .addGap(513, 513, 513))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(scoremagic, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(scoremagic, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -501,17 +463,14 @@ public class Scene1 extends javax.swing.JFrame {
                             .addComponent(C5, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 250, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(568, 568, 568)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(259, 259, 259)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(QuestionBox, javax.swing.GroupLayout.PREFERRED_SIZE, 538, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(QuestionBox, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(511, 511, 511)
@@ -543,85 +502,80 @@ public class Scene1 extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton3)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(QuestionBox, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(C4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Box2004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box2005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box2003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box2002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box2001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Box4004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box4005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box4003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box4002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box4001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Box6004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box6005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box6003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box6002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box6001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Box8004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box8005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box8003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box8002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box8001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Box10004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box10005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box10003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box10002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Box10001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4)
-                        .addGap(39, 39, 39))))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(QuestionBox, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(C4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(C1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Box2004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box2005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box2003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box2002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box2001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Box4004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box4005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box4003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box4002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box4001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Box6004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box6005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box6003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box6002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box6001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Box8004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box8005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box8003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box8002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box8001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Box10004, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box10005, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box10003, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box10002, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box10001, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addGap(39, 39, 39))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void Box2001ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box2001ActionPerformed
-        QuestionBox.setText("In 1932 she made Headlines for being the First woman to fly a  solo transatlantic Flight");
-        AnswerBox.getText();
-        CurrentQuestion = 2001 ;
+    QuestionBox.setText("The Oldest Kardashian Sister");
+    AnswerBox.getText();
+        CurrentQuestion = 2001;
         Box2001.setText("");
         this.remove(Box2001) ;
         repaint();
     }//GEN-LAST:event_Box2001ActionPerformed
 
     private void Box8001ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box8001ActionPerformed
-        QuestionBox.setText("She was Princess of Wales and Died in 1997 following a car crash");      
-        AnswerBox.getText();
+    QuestionBox.setText("Kendall Jenner's father"); 
+    AnswerBox.getText();
         CurrentQuestion = 8001;
         Box8001.setText("");
         this.remove(Box8001) ;
@@ -629,26 +583,26 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box8001ActionPerformed
 
     private void Box2002ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box2002ActionPerformed
-       QuestionBox.setText("After Six Years it WWII ended on September 2 of his Year ");
-       AnswerBox.getText();
-       CurrentQuestion = 2002;
-       this.remove(Box2002) ;
-       Box2002.setText("");
-       repaint();
+    QuestionBox.setText("Biggest Country in Aisa");
+    AnswerBox.getText();
+        CurrentQuestion = 2002;
+        Box2002.setText("");
+        this.remove(Box2002) ;
+        repaint();
     }//GEN-LAST:event_Box2002ActionPerformed
 
     private void Box8002ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box8002ActionPerformed
-        QuestionBox.setText("The Titanic Sank in This Year");
-        AnswerBox.getText();
+    QuestionBox.setText("North and South K ");
+    AnswerBox.getText();
         CurrentQuestion = 8002;
-        this.remove(Box8002) ;
         Box8002.setText("");
+        this.remove(Box8002) ;
         repaint();
     }//GEN-LAST:event_Box8002ActionPerformed
 
     private void Box8003ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box8003ActionPerformed
-        QuestionBox.setText("This 2006 Movie starred Gerard Butler as Leonidas I ");
-        AnswerBox.getText();
+    QuestionBox.setText("He Played Hulk in Avengers: EndGame");
+    AnswerBox.getText();
         CurrentQuestion = 8003;
         Box8003.setText("");
         this.remove(Box8003) ;
@@ -656,8 +610,8 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box8003ActionPerformed
 
     private void Box2003ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box2003ActionPerformed
-        QuestionBox.setText("Mel Gibson as Benjamin Martin Starred in this 2000 Movie");
-        AnswerBox.getText();
+    QuestionBox.setText("He plays Ironman in Marvel Movies");
+    AnswerBox.getText();
         CurrentQuestion = 2003;
         Box2003.setText("");
         this.remove(Box2003) ;
@@ -665,8 +619,8 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box2003ActionPerformed
 
     private void Box2004ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box2004ActionPerformed
-        QuestionBox.setText("It's drank all over the world but it is really Famous in The United Kingdom");
-        AnswerBox.getText();
+    QuestionBox.setText("It Produces Wool");
+    AnswerBox.getText();
         CurrentQuestion = 2004;
         Box2004.setText("");
         this.remove(Box2004) ;
@@ -674,33 +628,32 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box2004ActionPerformed
 
     private void Box8004ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box8004ActionPerformed
-        QuestionBox.setText("It's Cooked in multiple different ways and it white and yellow");
-        scoremagic.setText("Daily Double");
-        AnswerBox.getText();
+    QuestionBox.setText("You Dive ......");
+    scoremagic.setText(" Daily Double ");
+    AnswerBox.getText();
+        CurrentQuestion = 8004;
         Box8004.setText("");
-        CurrentQuestion = 8004 ;
         this.remove(Box8004) ;
         repaint();
     }//GEN-LAST:event_Box8004ActionPerformed
 
     private void Box2005ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box2005ActionPerformed
-        QuestionBox.setText("It's the most famous Sport in the world");
-        AnswerBox.getText();
-        Box2005.setText("");
-        scoremagic.setText(" Daily Triple ");
+    QuestionBox.setText("The first ambulance service was established in Cincinnati in");
+    AnswerBox.getText();
         CurrentQuestion = 2005;
+        Box2005.setText("");
         this.remove(Box2005) ;
         repaint();
     }//GEN-LAST:event_Box2005ActionPerformed
 
     private void Box8005ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box8005ActionPerformed
-        QuestionBox.setText("Lebron James Plays This Sport ");
-        AnswerBox.getText();
+     QuestionBox.setText("Ohio's Largest City by Size");
+     scoremagic.setText(" Daily Triple ");
+     AnswerBox.getText();
+        CurrentQuestion = 8005;
         Box8005.setText("");
-        CurrentQuestion = 8005 ;
         this.remove(Box8005) ;
         repaint();
-        
     }//GEN-LAST:event_Box8005ActionPerformed
 
     private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
@@ -724,267 +677,269 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_C5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         if (CurrentQuestion  == 2001 ){
-        if ("Amelia Earhart".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 200;
+
+    if (CurrentQuestion  == 2001 ){
+        if ("Kourtney Kardashian".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 400;
             ScoreBox.setText(" " + Score); 
          }
-        else if(CurrentQuestion  == 2001 ){
-            Score -= 200;
+        else if(CurrentQuestion  == 2001){
+            Score -= 400;
             ScoreBox.setText(" " + Score);
         } 
         }
-        if (CurrentQuestion  == 2002 ){
-        if ("1945".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 200;
+    if (CurrentQuestion  == 2002 ){
+        if ("Russia".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 400;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 2002 ){
-            Score -= 200;
+            Score -= 400;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 2003 ){
-        if ("The Patriot".equalsIgnoreCase(AnswerBox.getText())){
-           Score += 200;
+    if (CurrentQuestion  == 2003 ){
+        if ("Robert Downey Jr".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 400;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 2003 ){
-            Score -= 200;
+            Score -= 400;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 2004 ){
-        if ("Tea".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 200;
+    if (CurrentQuestion  == 2004 ){
+        if ("Sheep".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 400;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 2004 ){
-            Score -= 200;
+            Score -= 400;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 2005 ){
-        if ("Soccer".equalsIgnoreCase(AnswerBox.getText())){
-            Score *= 3;
+    if (CurrentQuestion  == 2005 ){
+        if ("1865".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 400;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 2005 ){
-            Score -= Score;
+            Score -= 400;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        
-        if (CurrentQuestion  == 4001 ){
-        if ("hillary Clinton".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 400;
+    
+    if (CurrentQuestion  == 4001 ){
+        if ("Kanye West".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 800;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 4001 ){
-            Score -= 400;
+            Score -= 800;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 4002 ){
-        if ("1914".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 400;
+    if (CurrentQuestion  == 4002 ){
+        if ("Iran".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 800;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 4002 ){
-            Score -= 400;
+            Score -= 800;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 4003 ){
-        if ("blockers".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 400;
+    if (CurrentQuestion  == 4003 ){
+        if ("Dwayne Johnson".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 800;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 4003 ){
-            Score -= 400;
+            Score -= 800;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 4004 ){
-        if ("bread".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 400;
+    if (CurrentQuestion  == 4004 ){
+        if ("Freezes".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 800;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 4004 ){
-            Score -= 400;
+            Score -= 800;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 4005 ){
-        if ("nfl".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 400;
+    if (CurrentQuestion  == 4005 ){
+        if ("Baseball".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 800;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 4005 ){
-            Score -= 400;
+            Score -= 800;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        
-        if (CurrentQuestion  == 6001 ){
-        if ("Anne Frank".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 600;
+    
+    if (CurrentQuestion  == 6001 ){
+        if ("Kylie Cosmetics".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1200;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 6001 ){
-            Score -= 600;
+            Score -= 1200;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 6002 ){
-        if ("2005".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 600;
+    if (CurrentQuestion  == 6002 ){
+        if ("Lebanon".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1200;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 6002 ){
-            Score -= 600;
+            Score -= 1200;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 6003 ){
-        if ("It".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 600;
+    if (CurrentQuestion  == 6003 ){
+        if ("John Cena".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1200;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 6003 ){
-            Score -= 600;
+            Score -= 1200;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 6004 ){
-        if ("Bacon".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 600;
+    if (CurrentQuestion  == 6004 ){
+        if ("sweet".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1200;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 6004 ){
-            Score -= 600;
+            Score -= 1200;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 6005 ){
-        if ("Tennis".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 600;
-            ScoreBox.setText(" " + Score);; 
+    if (CurrentQuestion  == 6005 ){
+        if ("Cleveland".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1200;
+            ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 6005 ){
-            Score -= 600;
+            Score -= 1200;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        
-        if (CurrentQuestion  == 8001 ){
-        if ("Princess Diana".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 800;
+    
+    if (CurrentQuestion  == 8001 ){
+        if ("Bruce Jenner".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1600;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 8001 ){
-            Score -= 800;
+            Score -= 1600;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 8002 ){
-        if ("1912".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 800;
-            ScoreBox.setText(" " + Score);
+    if (CurrentQuestion  == 8002 ){
+        if ("Korea".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1600;
+            ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 8002 ){
-            Score -= 800;
+            Score -= 1600;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 8003 ){
-        if ("300".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 800;
+    if (CurrentQuestion  == 8003 ){
+        if ("Mark Ruffalo".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 1600;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 8003 ){
-            Score -= 800;
+            Score -= 1600;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 8004 ){
-        if ("Eggs".equalsIgnoreCase(AnswerBox.getText())){
+    if (CurrentQuestion  == 8004 ){
+        if ("deep".equalsIgnoreCase(AnswerBox.getText())){
             Score *= 2;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 8004 ){
             Score -= Score;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 8005 ){
-        if ("Basketball".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 800;
+    if (CurrentQuestion  == 8005 ){
+        if ("Zanesville".equalsIgnoreCase(AnswerBox.getText())){
+            Score *= 3;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 8005 ){
-            Score -= 800;
+            Score -= Score;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        
-        if (CurrentQuestion  == 10001 ){
-        if ("Serena Williams".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 1000;
+    
+    if (CurrentQuestion  == 10001 ){
+        if ("Kris Jenner".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 2000;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 10001 ){
-            Score -= 1000;
+            Score -= 2000;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 10002 ){
-        if ("2009".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 1000;
+    if (CurrentQuestion  == 10002 ){
+        if ("India".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 2000;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 10002 ){
-            Score -= 1000;
+            Score -= 2000;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 10003 ){
-        if ("Titanic".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 1000;
-            ScoreBox.setText(" " + Score);
+    if (CurrentQuestion  == 10003 ){
+        if ("Leonardo Dicaprio".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 2000;
+            ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 10003 ){
-            Score -= 1000;
+            Score -= 2000;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 10004 ){
-        if ("cereal".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 1000;
+    if (CurrentQuestion  == 10004 ){
+        if ("speech".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 2000;
             ScoreBox.setText(" " + Score); 
          }
         else if(CurrentQuestion  == 10004 ){
-            Score -= 1000;
+            Score -= 2000;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        if (CurrentQuestion  == 10005 ){
-        if ("epl".equalsIgnoreCase(AnswerBox.getText())){
-            Score += 1000;
+    if (CurrentQuestion  == 10005 ){
+        if ("Jesse Owens".equalsIgnoreCase(AnswerBox.getText())){
+            Score += 2000;
             ScoreBox.setText(" " + Score); 
          }
-        else if(CurrentQuestion  == 10005
-                ){
-            Score -= 1000;
+        else if(CurrentQuestion  == 10005 ){
+            Score -= 2000;
             ScoreBox.setText(" " + Score);
+        } 
         }
-        }
-        AnswerBox.setText("");
+    
+    AnswerBox.setText("");
+    
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void Box4001ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box4001ActionPerformed
-        QuestionBox.setText("She was a Former First Lady and Later Ran for President of the US but failed ");       
-        AnswerBox.getText();
+    QuestionBox.setText("The Third husband of Kim Kardashian ");
+    AnswerBox.getText();
         CurrentQuestion = 4001;
         Box4001.setText("");
         this.remove(Box4001) ;
@@ -992,99 +947,98 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box4001ActionPerformed
 
     private void Box6001ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box6001ActionPerformed
-         QuestionBox.setText("She Died in the Holocaust but became famous after her death when her diary as found");
-         AnswerBox.getText();
-         CurrentQuestion = 6001;
-         Box6001.setText("");
-         this.remove(Box6001) ;
-         repaint();
+    QuestionBox.setText("The name of Kylie Jenner's Make-up Company");
+    AnswerBox.getText();
+        CurrentQuestion = 6001;
+        Box6001.setText("");
+        this.remove(Box6001) ;
+        repaint();    
     }//GEN-LAST:event_Box6001ActionPerformed
 
     private void Box10001ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box10001ActionPerformed
-         QuestionBox.setText("She Has the Second Most single titles in women's Tennis grand Slam Tournaments at 23");
-         AnswerBox.getText();
-         CurrentQuestion = 10001 ;
-         Box10001.setText("");
-         this.remove(Box10001) ;
-         repaint();
+    QuestionBox.setText("Kim Kardashian's Mother");
+    AnswerBox.getText();
+        CurrentQuestion = 10001;
+        Box10001.setText("");
+        this.remove(Box10001) ;
+        repaint();
     }//GEN-LAST:event_Box10001ActionPerformed
 
     private void Box4002ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box4002ActionPerformed
-        QuestionBox.setText("WWI Started on July 28th of This Year");
-        AnswerBox.getText();
+    QuestionBox.setText("Two Countries with similar names :Iraq and");
+    AnswerBox.getText();
         CurrentQuestion = 4002;
         Box4002.setText("");
         this.remove(Box4002) ;
-        repaint();
+        repaint();    
     }//GEN-LAST:event_Box4002ActionPerformed
 
     private void Box6002ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box6002ActionPerformed
-         QuestionBox.setText("Ronald Reagan Our 40th President Died on June 5th of this year");
-         AnswerBox.getText();
-         CurrentQuestion = 6002;
-         Box6002.setText("");
-         this.remove(Box6002) ;
-         repaint();
-         
+    QuestionBox.setText("The Countries Capital is Beirut");
+    AnswerBox.getText();
+        CurrentQuestion = 6002;
+        Box6002.setText("");
+        this.remove(Box6002) ;
+        repaint();
     }//GEN-LAST:event_Box6002ActionPerformed
 
     private void Box10002ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box10002ActionPerformed
-         QuestionBox.setText("On June 25th of this year Micheal Jackson Died");
-         AnswerBox.getText();
-         CurrentQuestion = 10002;
-         Box10002.setText("");
-         this.remove(Box10002) ;
-         repaint();
+    QuestionBox.setText("2nd biggest population in the World and in Asia");
+    AnswerBox.getText();
+        CurrentQuestion = 10002;
+        Box10002.setText("");
+        this.remove(Box10002) ;
+        repaint();
     }//GEN-LAST:event_Box10002ActionPerformed
 
     private void Box4003ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box4003ActionPerformed
-         QuestionBox.setText("This 2018 Movie Starred John Cena as Mitchell and Leslie Mann as Lisa");
-         AnswerBox.getText();
-         CurrentQuestion = 4003;
-         Box4003.setText("");
-         this.remove(Box4003) ;
-         repaint();
+    QuestionBox.setText("this Actor is the highest paid in the world");
+    AnswerBox.getText();
+        CurrentQuestion = 4003;
+        Box4003.setText("");
+        this.remove(Box4003) ;
+        repaint();    
     }//GEN-LAST:event_Box4003ActionPerformed
 
     private void Box6003ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box6003ActionPerformed
-         QuestionBox.setText("This 2017 Movie Starred Sophia Lillis as Beverly Marsh");
-         AnswerBox.getText();
-         CurrentQuestion = 6003;
-         Box6003.setText("");
-         this.remove(Box6003) ;
-         repaint();
+    QuestionBox.setText("Former Wrestler turned Actor and he starred in the 2018 movie Blockers");
+    AnswerBox.getText();
+        CurrentQuestion = 6003;
+        Box6003.setText("");
+        this.remove(Box6003) ;
+        repaint();    
     }//GEN-LAST:event_Box6003ActionPerformed
 
     private void Box10003ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box10003ActionPerformed
-         QuestionBox.setText("This 1997 Movie Starred Billy Zane as Caledon Hockley");
-         AnswerBox.getText();
-         CurrentQuestion = 10003;
-         Box10003.setText("");
-         this.remove(Box10003) ;
-         repaint();
+    QuestionBox.setText("He Starred as Jay Gatsby in thr 2013 version of the Movie The Great Gatsby");
+    AnswerBox.getText();
+        CurrentQuestion = 10003;
+        Box10003.setText("");
+        this.remove(Box10003) ;
+        repaint();
     }//GEN-LAST:event_Box10003ActionPerformed
 
     private void Box4004ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box4004ActionPerformed
-         QuestionBox.setText("It's put in a Toaster");
-         AnswerBox.getText();
-         CurrentQuestion = 4004;
-         Box4004.setText("");
-         this.remove(Box4004) ;
-         repaint();
+    QuestionBox.setText("You Put it in the Fridge and it ");
+    AnswerBox.getText();
+        CurrentQuestion = 4004;
+        Box4004.setText("");
+        this.remove(Box4004) ;
+        repaint();
     }//GEN-LAST:event_Box4004ActionPerformed
 
     private void Box6004ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box6004ActionPerformed
-        QuestionBox.setText("A cooked piece of meat ");
-        AnswerBox.getText();
+    QuestionBox.setText("to many of it is bad for your teeth");
+    AnswerBox.getText();
         CurrentQuestion = 6004;
         Box6004.setText("");
         this.remove(Box6004) ;
-        repaint();
+        repaint();    
     }//GEN-LAST:event_Box6004ActionPerformed
 
     private void Box10004ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box10004ActionPerformed
-        QuestionBox.setText("A bowl of milk and ....");
-        AnswerBox.getText();
+    QuestionBox.setText("MLK Jr.'s Famous I Have a Dream");
+    AnswerBox.getText();
         CurrentQuestion = 10004;
         Box10004.setText("");
         this.remove(Box10004) ;
@@ -1092,17 +1046,17 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box10004ActionPerformed
 
     private void Box4005ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box4005ActionPerformed
-        QuestionBox.setText("Each Year almost 100 million people tune in to watch there finale called the SuperBowl");
-        AnswerBox.getText();
+    QuestionBox.setText("Cincinnati Reds were the first professiona .... Team");
+    AnswerBox.getText();
         CurrentQuestion = 4005;
         Box4005.setText("");
         this.remove(Box4005) ;
-        repaint();
+        repaint();    
     }//GEN-LAST:event_Box4005ActionPerformed
 
     private void Box6005ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box6005ActionPerformed
-        QuestionBox.setText("Serena Williams Plays this Sport");
-        AnswerBox.getText();
+    QuestionBox.setText("This City is Home to the Rock and Roll Hall of Fame");
+    AnswerBox.getText();
         CurrentQuestion = 6005;
         Box6005.setText("");
         this.remove(Box6005) ;
@@ -1110,8 +1064,8 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box6005ActionPerformed
 
     private void Box10005ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Box10005ActionPerformed
-        QuestionBox.setText("The Most Famous soccer league in the World");
-        AnswerBox.getText();
+    QuestionBox.setText("He Grew up in Cleveland,Ohio and He won four gold medals in the 1936 Olympics in Berlin");
+    AnswerBox.getText();
         CurrentQuestion = 10005;
         Box10005.setText("");
         this.remove(Box10005) ;
@@ -1119,21 +1073,9 @@ public class Scene1 extends javax.swing.JFrame {
     }//GEN-LAST:event_Box10005ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       QuestionBox.setText("");
+    QuestionBox.setText("");
+    AnswerBox.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        new DoubleJeopardy(Score).setVisible(true);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1206,7 +1148,6 @@ public class Scene1 extends javax.swing.JFrame {
     private javax.swing.JTextArea ScoreBox;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
